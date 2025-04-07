@@ -4,7 +4,7 @@ export default function CardInfo(props) {
     return (
         <div className={styles.cardInfo}>
             <h1>{props.infoIcon}</h1>
-            <p>{props.iconSkinType}</p>
+            <p>Linha de skins {props.iconSkinType}</p>
         </div>
     )
 }

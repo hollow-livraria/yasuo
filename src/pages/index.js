@@ -26,12 +26,12 @@ export default function Home() {
     icon = yasVel;
     infoIcon =
       "Yasuo Velho Oeste é uma skin do Yasuo lançada em 2016. Uma das melhores skins do Yasuo, com um tema de faroeste a espada dele tem uma pistola insano";
-    iconSkinType = "Linha de skins Velho Oeste";
+    iconSkinType = "Velho Oeste";
   } else {
     icon = yasPro;
     infoIcon =
       "Yasuo Projeto é uma skin do Yasuo lançada em 2017. Uma das skins mais mids do Yasuo, serio voce so usa isso se n tiver outra";
-    iconSkinType = "Linha de skins Projeto";
+    iconSkinType = "Projeto";
   }
 
   return (
