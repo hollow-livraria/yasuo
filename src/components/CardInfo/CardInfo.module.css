@@ -1,3 +1,11 @@
+.cardInfo {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #faf6f6;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .cardInfo h1 {
     margin: 10px;
     font-size: 30px;
