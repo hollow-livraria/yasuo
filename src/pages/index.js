@@ -5,6 +5,7 @@ import { useState } from "react";
 import yasVel from "../../public/yasuoOeste.jpg";
 import yasPro from "../../public/yasuoProjeto.jpg";
 import CardSkin from "@/components/CardSkin";
+import CardInfo from "@/components/CardInfo";
 
 export default function Home() {
   let icon = "";
@@ -23,12 +24,14 @@ export default function Home() {
 
   if (card == "yasVel") {
     icon = yasVel;
-    infoIcon = "Yasuo Velho Oeste é uma skin do Yasuo lançada em 2016. Uma das melhores skins do Yasuo, com um tema de faroeste a espada dele tem uma pistola insano";
-    iconSkinType = "yasVel";
+    infoIcon =
+      "Yasuo Velho Oeste é uma skin do Yasuo lançada em 2016. Uma das melhores skins do Yasuo, com um tema de faroeste a espada dele tem uma pistola insano";
+    iconSkinType = "Linha de skins Velho Oeste";
   } else {
     icon = yasPro;
-    infoIcon = "Yasuo Projeto é uma skin do Yasuo lançada em 2017. Uma das skins mais mids do Yasuo, serio voce so usa isso se n tiver outra";
-    iconSkinType = "yasPro";
+    infoIcon =
+      "Yasuo Projeto é uma skin do Yasuo lançada em 2017. Uma das skins mais mids do Yasuo, serio voce so usa isso se n tiver outra";
+    iconSkinType = "Linha de skins Projeto";
   }
 
   return (
@@ -45,8 +48,11 @@ export default function Home() {
 
       <div>
         <main className={styles.main}>
-          <CardSkin icon={icon}/>
-          <button>mudar skin</button>
+          <button className={styles.btn} onClick={alterCard}>
+            mudar skin
+          </button>
+          <CardSkin icon={icon} />
+          <CardInfo infoIcon={infoIcon} iconSkinType={iconSkinType} />
         </main>
         <footer className={styles.footer}></footer>
       </div>

@@ -1,0 +1,9 @@
+.cardBody {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.cardBody img {
+  width: 100%;
+  height: auto;
+}
