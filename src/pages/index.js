@@ -2,8 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
-import yasVel from ".public/yasuoOeste.jpg";
-import yasPro from ".public/yasuoProjeto.jpg";
+import yasVel from "../../public/yasuoOeste.jpg";
+import yasPro from "../../public/yasuoProjeto.jpg";
+import CardSkin from "@/components/CardSkin";
 
 export default function Home() {
   let icon = "";
@@ -39,13 +40,14 @@ export default function Home() {
       </Head>
 
       <header>
-        <h1>teste</h1>
-        <p>teste2</p>
-        <button>mudar skin</button>
+        <h1>exemplo de useState mudando uma imagem</h1>
       </header>
 
       <div>
-        <main className={styles.main}></main>
+        <main className={styles.main}>
+          <CardSkin icon={icon}/>
+          <button>mudar skin</button>
+        </main>
         <footer className={styles.footer}></footer>
       </div>
     </div>
